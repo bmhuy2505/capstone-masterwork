@@ -1,4 +1,4 @@
-/* GLOBAL */
+/* ==================== GLOBAL ==================== */
 * {
     box-sizing: border-box;
 }
@@ -60,4 +60,345 @@ html {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+
+nav ul li a:before {
+    transition: all 0.5s;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.btn-outline-primary {
+    color: #dc4f72;
+    border-color: #dc4f72;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #dc4f72;
+    border-color: #dc4f72;
+}
+/* ==================== HEADER ==================== */
+
+header.main-header {
+    background-color: white;
+    padding: 0px;
+    transition: all 0.4s ease 0s;
+    height: 90px;
+    display: grid;
+    align-items: center;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar .navbar-brand {
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #dc4f72;
+    letter-spacing: -1px;
+}
+
+.navbar .navbar-nav .nav-item {
+    padding: 0 15px;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-link {
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+    padding: 14px 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2c3038;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item.active .nav-link {
+    color: #dc4f72;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item.active .nav-link::before {
+    width: 20px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #dc4f72;
+}
+
+a.nav-link:before,
+a.dropdown-item:before {
+    position: absolute;
+    content: "";
+    background: #dc4f72;
+    width: 0px;
+    height: 2px;
+    bottom: 13px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover:before,
+a.dropdown-item:hover:before {
+    width: 20px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item.dropdown {
+    padding-right: 20px;
+}
+
+.search-right {
+    align-items: center;
+    display: inline-grid;
+    grid-template-columns: auto 1fr;
+}
+
+a.search-search span.fa {
+    color: #5a5a5a;
+    font-size: 15px;
+    opacity: 0.7;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    background: #f7f9fc;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid #eee;
+}
+
+.fa-search:before {
+    content: "";
+}
+
+.search-right .pop-overlay {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    transition: opacity 0ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99;
+    background: #000000ba;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+    height: 100%;
+    width: 100%;
+}
+
+.search-right .pop-overlay.show {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.search-right .popup {
+    position: relative;
+    margin: 0rem auto;
+    padding: 15px;
+    top: 50%;
+    max-width: 600px;
+}
+
+.search-right .popup form input[type="search"] {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #5a5a5a;
+    height: 55px;
+    padding: 15px 20px 12px;
+    background: white;
+    width: 100%;
+    border: 1px solid #eee;
+    border-radius: 0;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    border-right: none;
+}
+
+.search-right .popup form button {
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+    color: #f5f9fc;
+    font-weight: 500;
+    height: 55px;
+    border: none;
+    background: #dc4f72;
+    padding: 0 25px;
+    border-left: none;
+    border-radius: initial;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.5;
+}
+
+.search-right .popup .close {
+    position: absolute;
+    right: 20px;
+    top: -50px;
+    transition: all 200ms;
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.theme-button {
+    transition: 0.3s ease-out;
+    display: inline-block;
+    line-height: 52px;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px 30px;
+    text-transform: uppercase;
+}
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.theme-switch {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.mode-container {
+    width: 24px;
+    height: 24px;
+    padding: 0px 0;
+}
+
+.gg-sun {
+    position: relative;
+    transform: scale(var(--ggs, 1));
+    height: 24px;
+    background: linear-gradient(180deg, currentColor 4px, transparent 0)
+            no-repeat 5px -6px / 2px 6px,
+        linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 5px
+            14px / 2px 6px,
+        linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat -8px 5px /
+            6px 2px,
+        linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 14px
+            5px / 6px 2px;
+    border-radius: 100px;
+    box-shadow: inset 0 0 0 2px;
+    border: 6px solid transparent;
+}
+
+.gg-sun,
+.gg-sun:after,
+.gg-sun:before {
+    box-sizing: border-box;
+    display: block;
+    width: 24px;
+    color: #2c3038;
+}
+
+.mode-container i.gg-sun {
+    display: none;
+}
+
+.gg-moon {
+    overflow: hidden;
+    position: relative;
+    transform: rotate(-135deg);
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-bottom: 2px solid transparent;
+}
+
+.gg-moon:after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 18px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    top: 8px;
+    left: 2px;
+}
+
+.gg-moon,
+.gg-moon:after {
+    display: block;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.mode-container i.gg-moon {
+    display: block;
+}
+
+/* Hiển thị mặt trời trong chế độ sáng */
+body:not(.dark-theme) .mode-container i.gg-sun {
+    display: none;
+}
+
+body:not(.dark-theme) .mode-container i.gg-moon {
+    display: block;
+}
+
+/* Hiển thị mặt trăng trong chế độ tối */
+body.dark-theme .mode-container i.gg-sun {
+    display: block;
+}
+
+body.dark-theme .mode-container i.gg-moon {
+    display: none;
+}
+
+/* ==================== HomePage Hero Header ==================== */
+.w3l-index1 {
+    margin-top: 90px;
+}
+
+.content {
+    background: linear-gradient(to right, white, rgba(255, 255, 255, 0.92)),
+        url(../img/banner.jpg);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.w3l-index1 .content-left h3 {
+    font-size: 50px;
+    line-height: 57.5px;
+    color: #2c3038;
+    font-weight: 700;
+}
+
+.w3l-index1 .content-left p {
+    color: #5a5a5a;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    max-width: 450px;
 }

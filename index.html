@@ -40,14 +40,167 @@
             &#8211; Just another W3Layouts free WordPress Demo Sites site
         </title>
     </head>
-    <body>
+    <body style="height: 100000px">
         <!-- Header -->
-        <header>
-            <div class="container">Hello</div>
-        </header>
+        <header class="main-header fixed-top">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg stroke px-0 pt-lg-0">
+                    <!-- Logo -->
+                    <h1>
+                        <a class="navbar-brand" href="#">
+                            <i class="fa-regular fa-handshake"></i>
+                            Masterwork
+                        </a>
+                    </h1>
+                    <!-- Menu -->
+                    <div class="collapse navbar-collapse">
+                        <!-- Thanh menu -->
+                        <ul id="primary-menu" class="navbar-nav ms-lg-auto">
+                            <li class="nav-item active">
+                                <a href="#" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Services</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    href="#"
+                                    class="nav-link dropdown-toggle"
+                                    data-toggle="dropdown"
+                                    id="navbar-dropdown-menu-link-21"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                >
+                                    Pages
+                                </a>
+                                <!-- Menu xổ xuống -->
+                                <!-- <div
+                                    class="sub-menu dropdown-menu"
+                                    aria-labelledby="navbar-dropdown-menu-link-21"
+                                >
+                                    <a
+                                        href="#"
+                                        class="dropdown-item"
+                                        id="menu-item-27"
+                                        >Blog Posts</a
+                                    ><a
+                                        href="#"
+                                        class="dropdown-item"
+                                        id="menu-item-24"
+                                        >Landing page</a
+                                    ><a
+                                        href="#"
+                                        class="dropdown-item"
+                                        id="menu-item-22"
+                                        >404 page</a
+                                    >
+                                </div> -->
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                        <!-- Thanh tìm kiếm -->
+                        <div class="search-right HeaderSearch me-lg-3">
+                            <a
+                                href="#search"
+                                class="search-search"
+                                title="search"
+                                onclick="toggleSearchPopup()"
+                            >
+                                <span class="fa fa-search" aria-hidden="true">
+                                </span>
+                            </a>
+                            <!-- search popup -->
+                            <div id="search" class="pop-overlay">
+                                <div class="popup">
+                                    <form class="search-box d-sm-flex">
+                                        <input
+                                            type="search"
+                                            placeholder="Enter Keyword"
+                                            name="s"
+                                            required="required"
+                                            autofocus=""
+                                        />
+                                        <button type="submit" class="btn">
+                                            Search
+                                        </button>
+                                    </form>
+                                    <a
+                                        class="close"
+                                        href="#"
+                                        onclick="closeSearchPopup()"
+                                    >
+                                        ×
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- /search popup -->
+                        </div>
+                        <!-- Thanh buy -->
+                        <div class="me-lg-3 mt-lg-0 HeaderButton">
+                            <a
+                                class="btn btn-outline-primary theme-button"
+                                href="#"
+                            >
+                                Schedule a Demo</a
+                            >
+                        </div>
+                    </div>
 
+                    <!-- Chuyển đổi sáng tối -->
+                    <div class="mobile-position DarkandLight">
+                        <nav class="navigation">
+                            <div class="theme-switch-wrapper">
+                                <label class="theme-switch" for="checkbox">
+                                    <input type="checkbox" id="checkbox" />
+                                    <div class="mode-container">
+                                        <i class="gg-sun"></i>
+                                        <i class="gg-moon"></i>
+                                    </div>
+                                </label>
+                            </div>
+                        </nav>
+                    </div>
+                </nav>
+            </div>
+        </header>
         <!-- HomePage Hero Header -->
-        <section></section>
+        <section>
+            <div class="w3l-index1">
+                <div class="content">
+                    <div class="container HomePageHeroHeader">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 content-left">
+                                <h3>
+                                    We Execute Our Ideas From Start to Finish
+                                </h3>
+                                <p class="mt-3 mb-lg-5 mb-4">
+                                    Building a beautiful interactive business
+                                    for startups and innovative companies.
+                                </p>
+                                <a
+                                    href="#"
+                                    class="btn btn-outline-primary theme-button"
+                                    >Get Started</a
+                                >
+                            </div>
+                            <div class="col-lg-6 content-photo mt-lg-0 mt-5">
+                                <img
+                                    src="./img/main.png"
+                                    class="img-fluid"
+                                    alt="main image"
+                                />
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- HomePage Why choose us -->
         <section></section>
@@ -82,5 +235,43 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"
         ></script>
+
+        <!-- Ẩn hiện popup -->
+        <script>
+            function toggleSearchPopup() {
+                var popup = document.querySelector(
+                    ".search-right .pop-overlay"
+                );
+                popup.classList.toggle("show");
+            }
+
+            function closeSearchPopup() {
+                var popup = document.querySelector(
+                    ".search-right .pop-overlay"
+                );
+                popup.classList.remove("show");
+            }
+        </script>
+        <!-- Chuyển nền sáng tối -->
+        <script>
+            const checkbox = document.getElementById("checkbox");
+
+            document.addEventListener("DOMContentLoaded", () => {
+                if (localStorage.getItem("theme") === "dark") {
+                    checkbox.checked = true;
+                    document.body.classList.add("dark-theme");
+                }
+            });
+
+            checkbox.addEventListener("change", () => {
+                if (checkbox.checked) {
+                    document.body.classList.add("dark-theme");
+                    localStorage.setItem("theme", "dark");
+                } else {
+                    document.body.classList.remove("dark-theme");
+                    localStorage.setItem("theme", "light");
+                }
+            });
+        </script>
     </body>
 </html>

@@ -558,3 +558,39 @@ img.img-curve:hover {
     margin-bottom: 15px;
     margin-top: 10px;
 }
+
+/* ==================== HomePage stats ==================== */
+
+.new-block {
+    background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.33)
+        ),
+        url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 480px;
+    display: grid;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.homepage_cover .middle-section {
+    max-width: 550px;
+}
+
+.homepage_cover .middle-section h2 {
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.homepage_cover .link-list-menu p {
+    font-size: 16px;
+    color: #eee;
+    line-height: 24.5px;
+}

@@ -305,7 +305,44 @@
         </section>
 
         <!-- HomePage Stats section -->
-        <section></section>
+        <section class="homepage_stats pb-5 pt-4">
+            <div class="container pb-lg-3">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="stats_info">
+                            <h4>Happy Customers</h4>
+                            <p class="counter">10458</p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Facere atque sed.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 mt-sm-0 mt-4">
+                        <div class="stats_info">
+                            <h4>Winning Awards</h4>
+                            <p class="counter">890</p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Facere atque sed.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 mt-lg-0 mt-sm-5 mt-4">
+                        <div class="stats_info">
+                            <h4>Completed Projects</h4>
+                            <p class="counter">5345</p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Facere atque sed.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- HomePage Cover -->
         <section></section>
@@ -358,6 +395,7 @@
                 popup.classList.remove("show");
             }
         </script>
+
         <!-- Chuyển nền sáng tối -->
         <script>
             const checkbox = document.getElementById("checkbox");
@@ -378,6 +416,26 @@
                     localStorage.setItem("theme", "light");
                 }
             });
+        </script>
+
+        <!-- Jquery -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <!-- Jquery waypoint -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+            integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <!-- Counting up to numerical -->
+        <script src="./js/jquery.countup.js"></script>
+        <script>
+            $(".counter").countUp();
         </script>
     </body>
 </html>

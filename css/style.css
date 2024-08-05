@@ -84,6 +84,29 @@ nav ul li a:before {
 a {
     text-decoration: none;
 }
+
+.btn-primary {
+    color: #fff;
+    background-color: #dc4f72;
+    border-color: #dc4f72;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #d62f58;
+    border-color: #cf2952;
+}
+
+.theme-button {
+    transition: 0.3s ease-out;
+    display: inline-block;
+    line-height: 52px;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px 30px;
+    text-transform: uppercase;
+}
 /* ==================== HEADER ==================== */
 
 header.main-header {
@@ -258,17 +281,6 @@ a.search-search span.fa {
     text-decoration: none;
     color: #fff;
     opacity: 0.7;
-}
-
-.theme-button {
-    transition: 0.3s ease-out;
-    display: inline-block;
-    line-height: 52px;
-    font-weight: 700;
-    font-size: 14px;
-    margin: 0px;
-    padding: 0px 30px;
-    text-transform: uppercase;
 }
 
 .theme-switch-wrapper {
@@ -468,4 +480,44 @@ body.dark-theme .mode-container i.gg-moon {
     margin-top: 15px;
     font-size: 16px;
     line-height: 24.5px;
+}
+
+/* ==================== HomePage about ==================== */
+
+.homepage_about {
+    background-color: #f7f9fc;
+}
+
+.sub-title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #dc4f72;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.homepage_about .book-info h3 {
+    font-size: 35px;
+    line-height: 40px;
+    color: #2c3038;
+    font-weight: 700;
+}
+
+.homepage_about .book-info p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--text-color);
+    line-height: 24.4px;
+}
+
+img.img-curve {
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+}
+
+img.img-curve:hover {
+    transform: translateY(-0.5rem);
+    transition: 0.3s ease-in-out;
 }

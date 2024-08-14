@@ -433,10 +433,6 @@ a.search-search span.fa {
 .dark-theme .testimonials {
     background: linear-gradient(to right, black, rgba(255, 255, 255, 0.77)),
         url(https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: center;
-    background-attachment: fixed;
 }
 
 .dark-theme .w3l-footer .container .col__2 {

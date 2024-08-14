@@ -173,14 +173,6 @@ a.dropdown-item:hover:before {
     padding-right: 20px;
 }
 
-.navbar-expand-lg .sub-menu {
-    display: none;
-}
-
-.navbar-expand-lg .sub-menu.show {
-    display: block;
-}
-
 .search-right {
     align-items: center;
     display: inline-grid;

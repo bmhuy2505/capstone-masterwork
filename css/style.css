@@ -403,8 +403,53 @@ a.search-search span.fa {
     border: 1px solid #333;
 }
 
-.dark-theme .w3l-faq-block {
-    background: #191c1d;
+.dark-theme .w3l-faq-block .accordion-button:not(.collapsed),
+.dark-theme .w3l-faq-block .accordion-item,
+.dark-theme .w3l-faq-block .accordion-button,
+.dark-theme .faq-block h1,
+.dark-theme .faq-block h3,
+.dark-theme .nav-pills .nav-link,
+.dark-theme .w3l-footer h3,
+.dark-theme .w3l-footer .container .columns__1 a {
+    color: white;
+}
+
+.dark-theme .w3l-faq-block .accordion-button:not(.collapsed),
+.dark-theme .w3l-faq-block .accordion-item,
+.dark-theme .w3l-faq-block .accordion-button {
+    background-color: #131617;
+}
+
+.dark-theme .faq-block .content {
+    background: transparent;
+}
+
+.dark-theme .faq-block p,
+.dark-theme .w3l-footer .columns__1,
+.dark-theme .w3l-footer .col__2 .column p {
+    color: grey;
+}
+
+.dark-theme .testimonials {
+    background: linear-gradient(to right, black, rgba(255, 255, 255, 0.77)),
+        url(https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.dark-theme .w3l-footer .container .col__2 {
+    background-color: #131617;
+}
+
+.dark-theme .testimonials .item {
+    background-color: #191c1d;
+}
+
+.dark-theme .w3l-footer,
+.w3l-footer .subscribe input[type="email"] {
+    background: #181c1d;
 }
 
 /* ==================== HomePage Hero Header ==================== */
@@ -679,6 +724,10 @@ h3 {
 }
 
 /* FAQ */
+.w3l-faq-block .accordion-button:not(.collapsed) {
+    background-color: transparent;
+}
+
 .w3l-faq-block .faq-image {
     position: sticky;
     top: 80px;
@@ -747,6 +796,7 @@ h3 {
 }
 
 /* Testimonials */
+
 .testimonials {
     background: linear-gradient(to right, white, rgba(255, 255, 255, 0.77)),
         url(https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b2.jpg);
@@ -759,12 +809,18 @@ h3 {
 .owl-carousel img {
     display: inline-block;
     border-radius: 50%;
-    width: 200px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     object-position: top;
     border: 3px solid #cb5578;
     margin-right: 40px;
+}
+
+.testimonials .item {
+    padding: 40px;
+    margin: 10px;
+    border-radius: 8px;
 }
 
 .owl-item p {
@@ -924,4 +980,14 @@ h3 {
     width: 20%;
     color: #fff;
     border-radius: 4px;
+}
+
+.w3l-footer .container li {
+    padding-bottom: 10px;
+}
+
+.w3l-footer .container .col__2 {
+    padding: 20px;
+    border-radius: 4px;
+    background-color: white;
 }

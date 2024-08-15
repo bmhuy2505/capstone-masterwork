@@ -154,6 +154,10 @@ header.main-header {
     color: #dc4f72;
 }
 
+.navbar-collapse {
+    background-color: white;
+}
+
 a.nav-link:before,
 a.dropdown-item:before {
     position: absolute;
@@ -368,6 +372,10 @@ a.search-search span.fa {
 .dark-theme .homepage_about .book-info p,
 .dark-theme .homepage_stats .stats_info p:not(.counter) {
     color: #b7b7b7;
+}
+
+.dark-theme .navbar-collapse {
+    background-color: #191c1d;
 }
 
 .dark-theme .homepage_hero .content-left h3,

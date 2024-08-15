@@ -1,0 +1,12 @@
+Header: Huy
+HomePage Hero Header: Huy
+HomePage Why choose us: Huy
+Homepage about: Huy
+HomePage Cover: Huy
+Back to top: Huy
+HomePage Faq: Tài
+HomePage Projects: Tài
+HomePage Testimonials: Tài
+HomePage CTA: Tài
+Footer: Tài
+Dark mode: Cả hai làm như trên

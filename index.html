@@ -62,7 +62,7 @@
         <!-- Header -->
         <header class="main-header fixed-top">
             <div class="container">
-                <nav class="navbar navbar-expand-lg stroke px-0 pt-lg-0">
+                <nav class="navbar navbar-expand-lg px-0 pt-lg-0">
                     <!-- Logo -->
                     <h1>
                         <a class="navbar-brand" href="#">
@@ -73,16 +73,15 @@
 
                     <!-- Button menu -->
                     <button
-                        class="navbar-toggler bg-gradient"
+                        class="navbar-toggler"
                         type="button"
-                        data-toggle="collapse"
-                        data-target="#navbar-content"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbar-content"
                         aria-controls="navbar-content"
                         aria-expanded="false"
                         aria-label="Toggle navigation"
                     >
-                        <i class="fa-solid fa-bars"></i>
-                        <i class="fa-solid fa-x" style="display: none"></i>
+                        <span class="navbar-toggler-icon"></span>
                     </button>
 
                     <!-- Menu -->
@@ -1100,16 +1099,6 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         ></script>
-
-        <!-- Button menu -->
-        <script>
-            $(document).ready(function () {
-                $(".navbar-toggler").click(function () {
-                    $("#navbar-content").toggleClass("show");
-                    $(this).find(".fa-bars, .fa-x").toggle();
-                });
-            });
-        </script>
 
         <!-- Back to top -->
         <script>
